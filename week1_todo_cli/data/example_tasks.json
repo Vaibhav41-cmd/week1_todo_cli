@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "next_id": 6,
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Design the CLI application architecture",
+      "description": "Sketch modules, classes and the data flow for DESIGN.md",
+      "priority": "high",
+      "status": "completed",
+      "created_at": "2026-10-14T09:00:00+00:00",
+      "updated_at": "2026-10-15T17:30:00+00:00",
+      "completed_at": "2026-10-15T17:30:00+00:00",
+      "due_date": "2026-10-16"
+    },
+    {
+      "id": 2,
+      "title": "Implement add / list / done / rm commands",
+      "description": "Core CRUD through the TodoService layer",
+      "priority": "high",
+      "status": "pending",
+      "created_at": "2026-10-15T09:15:00+00:00",
+      "updated_at": "2026-10-15T09:15:00+00:00",
+      "completed_at": null,
+      "due_date": "2026-10-28"
+    },
+    {
+      "id": 3,
+      "title": "Write the automated test suite",
+      "description": "unittest cases for models, service, storage and CLI",
+      "priority": "medium",
+      "status": "pending",
+      "created_at": "2026-10-16T11:00:00+00:00",
+      "updated_at": "2026-10-16T11:00:00+00:00",
+      "completed_at": null,
+      "due_date": "2026-11-04"
+    },
+    {
+      "id": 4,
+      "title": "Polish README and inline comments",
+      "description": "Design rationale, run instructions, test scenarios",
+      "priority": "medium",
+      "status": "pending",
+      "created_at": "2026-10-16T11:05:00+00:00",
+      "updated_at": "2026-10-16T11:05:00+00:00",
+      "completed_at": null,
+      "due_date": "2026-11-10"
+    },
+    {
+      "id": 5,
+      "title": "Package the ZIP and upload the Week 1 report",
+      "description": "ZIP archive + Word report + 200 word description",
+      "priority": "low",
+      "status": "pending",
+      "created_at": "2026-10-16T11:10:00+00:00",
+      "updated_at": "2026-10-16T11:10:00+00:00",
+      "completed_at": null,
+      "due_date": "2026-11-18"
+    }
+  ]
+}

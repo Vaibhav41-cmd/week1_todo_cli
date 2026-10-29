@@ -1,0 +1,17 @@
+PASTE THE TEXT BELOW INTO THE "Write description for the report" BOX (330+ words)
+================================================================================
+
+This report presents my Week 1 deliverable for the Junior Python Developer internship: a complete, self-contained command-line To-Do List Manager written in pure Python. The objective was to plan, design and implement a user-friendly CLI application that demonstrates clean modular design, core Python programming skills, robust input validation and thorough documentation, and the submitted project addresses every element of that brief.
+
+The application is organised into four clearly separated layers so that each concern can be understood, tested and replaced independently. The domain layer (models.py) defines the Task dataclass together with Priority and Status enumerations and enforces all validation rules. The storage layer (storage.py) persists the list as a single human-readable JSON document, using atomic temp-file writes so a crash can never corrupt the data, and quarantining a damaged file instead of overwriting it. The service layer (service.py) contains every business rule - adding, completing, re-opening, editing, deleting, filtering, sorting, searching and computing statistics - while the presentation layer (cli.py) is a thin argparse front-end offering eleven sub-commands plus a menu-driven interactive shell, coloured aligned tables, JSON/CSV export and consistent exit codes.
+
+Error handling was treated as a first-class feature. Malformed arguments are rejected at the border with usage messages, domain errors such as blank titles, invalid due dates or unknown task ids produce a single friendly "Error:" line with no traceback, destructive commands ask for confirmation and default to "no" in non-interactive use, and corrupt data files are recovered gracefully with a warning while the original bytes are preserved.
+
+Quality is verified by an automated suite of 31 unittest tests (also runnable under pytest) covering the model, service, storage and full CLI workflow, together with a fourteen-scenario manual test guide. The archive additionally contains a README explaining installation and usage, a DESIGN document with architecture diagrams, flow charts and pseudo-code, and sample data so the evaluator can explore the application immediately. The project requires no third-party dependencies and runs on any standard Python 3.9+ environment, reflecting a deliberate focus on readability, maintainability and professional software design principles.
+
+================================================================================
+Also fill these fields on the form:
+  * Upload your report file  ->  Week1_CLI_ToDo_Manager_Report.docx
+  * GitHub project URL       ->  push the week1_todo_cli folder to GitHub
+                                 (required for technical internships,
+                                 otherwise the certificate will not be issued)

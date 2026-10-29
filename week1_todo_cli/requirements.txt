@@ -1,0 +1,6 @@
+# The To-Do List Manager has NO runtime dependencies.
+# It runs on a stock Python 3.9+ installation using only the standard library.
+#
+# Optional (development only): a different test runner.
+# The test suite is written with `unittest`, so it works without this.
+# pytest>=7.0
